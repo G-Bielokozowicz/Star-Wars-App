@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="580.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projekt.controllers.FavouriteController">
+   <children>
+      <Label alignment="CENTER" layoutX="253.0" layoutY="2.0" prefHeight="25.0" prefWidth="94.0" text="Favourites" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onAction="#backButtonClick" text="Back" />
+      <Label alignment="CENTER" layoutX="56.0" layoutY="65.0" prefHeight="25.0" prefWidth="94.0" text="Films" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="253.0" layoutY="65.0" prefHeight="25.0" prefWidth="94.0" text="Characters" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="452.0" layoutY="65.0" prefHeight="25.0" prefWidth="94.0" text="Planets" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="56.0" layoutY="336.0" prefHeight="25.0" prefWidth="94.0" text="Species" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="253.0" layoutY="336.0" prefHeight="25.0" prefWidth="94.0" text="Starships" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="452.0" layoutY="336.0" prefHeight="25.0" prefWidth="94.0" text="Vehicles" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ListView fx:id="filmsList" layoutX="25.0" layoutY="90.0" onMouseClicked="#filmsClicked" prefHeight="200.0" prefWidth="155.0" />
+      <ListView fx:id="peopleList" layoutX="223.0" layoutY="90.0" onMouseClicked="#peopleClicked" prefHeight="200.0" prefWidth="155.0" />
+      <ListView fx:id="planetsList" layoutX="421.0" layoutY="90.0" onMouseClicked="#planetsClicked" prefHeight="200.0" prefWidth="155.0" />
+      <ListView fx:id="speciesList" layoutX="25.0" layoutY="358.0" onMouseClicked="#speciesClicked" prefHeight="200.0" prefWidth="155.0" />
+      <ListView fx:id="starshipsList" layoutX="223.0" layoutY="358.0" onMouseClicked="#starshipsClicked" prefHeight="200.0" prefWidth="155.0" />
+      <ListView fx:id="vehiclesList" layoutX="421.0" layoutY="358.0" onMouseClicked="#vehiclesClicked" prefHeight="200.0" prefWidth="155.0" />
+   </children>
+</AnchorPane>
